@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="./css/estilo.css" rel="stylesheet">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+
+    <!--HEADER-->
+    <header class="cabecera">
+       <div class="contenedor">
+       <h1>Prueba</h1>
+       </div>
+    </header>
+
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="" class="icono">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Garajes</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--CONTENIDO-->
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <!-- FILTRO -->
+            <div class="col-md-2 col-12" >
+                
+
+                <div class="row" style="margin-left: 8px;">
+                
+                     
+                      <div class="col-sm-12">
+                            <p>
+                                  Columnas:<br>
+                                  <input type="radio" name="columna" value="unaColumna"> Un lado<br>
+
+                                  <input type="radio" name="columna" value="dosColumnas"> Ambos lados<br>
+
+                                  <input type="radio" name="columna" value="sinColumna"> Sin columna
+
+                                </p>
+
+                            
+                      </div>
+                      <div class="col-sm-12">
+                            <p>
+                                  Vehiculo de tamaño:<br>
+                                  <input type="radio" name="coche" value="unaColumna"> Pequeño<br>
+
+                                  <input type="radio" name="coche" value="dosColumnas"> Mediano<br>
+
+                                  <input type="radio" name="coche" value="sinColumna"> Grande
+
+                            </p>    
+                      </div>
+                      <div class="col-sm-12">
+                            <p>
+                                  Precio:<br>
+                                  <input type="radio" name="precio" value="de0a75"> 0€ - 75€<br>
+
+                                  <input type="radio" name="precio" value="de75a150"> 75€ - 150€<br>
+
+                                  <input type="radio" name="precio" value="masde150"> +150€<br>
+
+                            </p>    
+                      </div>
+                      <div class="col-sm-12">
+                          <p>Extras: <br>
+                             <input type="checkbox" id="motos" name="motos" value="tieneMoto">
+                              <label for="motos"> Espacio adicional para Moto</label><br>
+                              <input type="checkbox" id="acceso" name="acceso" value="accesoFacil">
+                              <label for="acceso"> Fácil acceso</label><br>
+                              
+                          </p>
+
+                      </div>
+                      <div class="col-sm-12">
+                          <p>Precio alquiler: <br>
+                            <label for="vol">Hasta: </label>
+                              <input id="rango" type="range" id="vol" name="vol" min="0" max="300" onchange="mostrarValor()">
+                              <p id="valor"></p>
+
+
+                                <script>
+                                    function mostrarValor(){
+                                        var valor = document.getElementById('rango').value;
+
+                                        document.getElementById('valor').innerHTML = valor;
+                                        
+                                        console.log(valor);
+                                        
+                                    }
+                                </script>
+                              
+                          </p>
+
+                      </div>
+
+
+               
+
+                </div>
+
+            </div>
+
+            <!-- PARKINGS -->
+            <div class="col-md-10 col-12">
+                
+                    <div class="row" style="margin: 0 1%;">
+
+                            <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+                              <a  class="carta" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                  <div class="carta">
+                                                <div class="marco">
+                                                        <div class="imagen">
+                                                                <img src="./img/parking1.jpg">
+                                                        </div>
+                                                </div>
+                                                <div class="titulo">
+                                                        <h1>Titulo</h1>
+                                                </div>
+                                                <div class="precio">
+                                                         <p>200€/mes</p> 
+                                                </div>
+                                  </div>
+                              </a>         
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+                              <a  class="carta" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <div class="carta">
+                                                <div class="marco">
+                                                        <div class="imagen">
+                                                                <img src="./img/parking2.jpg">
+                                                        </div>
+                                                </div>
+                                                <div class="titulo">
+                                                        <h1>Titulo</h1>
+                                                </div>
+                                                <div class="precio">
+                                                         <p>200€/mes</p> 
+                                                </div>
+                                        </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+                              <a  class="carta" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <div class="carta">
+                                                <div class="marco">
+                                                        <div class="imagen">
+                                                                <img src="./img/parking1.jpg">
+                                                        </div>
+                                                </div>
+                                                <div class="titulo">
+                                                        <h1>Titulo</h1>
+                                                </div>
+                                                <div class="precio">
+                                                         <p>200€/mes</p> 
+                                                </div>
+                                        </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+                              <a  class="carta" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <div class="carta">
+                                                <div class="marco">
+                                                        <div class="imagen">
+                                                                <img src="./img/parking2.jpg">
+                                                        </div>
+                                                </div>
+                                                <div class="titulo">
+                                                        <h1>Titulo</h1>
+                                                </div>
+                                                <div class="precio">
+                                                         <p>200€/mes</p> 
+                                                </div>
+                                        </div>
+                                </a>
+                            </div>
+                    
+                    </div>
+                    <div class="row" style="margin: 0 1%;">
+
+                            <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+                              <a  class="carta" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <div class="carta">
+                                                <div class="marco">
+                                                        <div class="imagen">
+                                                                <img src="./img/parking1.jpg">
+                                                        </div>
+                                                </div>
+                                                <div class="titulo">
+                                                        <h1>Titulo</h1>
+                                                </div>
+                                                <div class="precio">
+                                                         <p>200€/mes</p> 
+                                                </div>
+                                        </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+                              <a  class="carta" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <div class="carta">
+                                                <div class="marco">
+                                                        <div class="imagen">
+                                                                <img src="./img/parking2.jpg">
+                                                        </div>
+                                                </div>
+                                                <div class="titulo">
+                                                        <h1>Titulo</h1>
+                                                </div>
+                                                <div class="precio">
+                                                         <p>200€/mes</p> 
+                                                </div>
+                                        </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+                              <a  class="carta" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <div class="carta">
+                                                <div class="marco">
+                                                        <div class="imagen">
+                                                                <img src="./img/parking1.jpg">
+                                                        </div>
+                                                </div>
+                                                <div class="titulo">
+                                                        <h1>Titulo</h1>
+                                                </div>
+                                                <div class="precio">
+                                                         <p>200€/mes</p> 
+                                                </div>
+                                        </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+                              <a  class="carta" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <div class="carta">
+                                                <div class="marco">
+                                                        <div class="imagen">
+                                                                <img src="./img/parking2.jpg">
+                                                        </div>
+                                                </div>
+                                                <div class="titulo">
+                                                        <h1>Titulo</h1>
+                                                </div>
+                                                <div class="precio">
+                                                         <p>200€/mes</p> 
+                                                </div>
+                                        </div>
+                                </a>
+                            </div>
+                    
+                    </div>
+
+            </div>
+        </div>
+
+
+
+        
+
+    </div>
+
+    
+
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+           <div class="col-lg-5 ">
+            
+            <div class="marco-grande">
+                <div class="imagen-grande">
+                    <img src="./img/parking1.jpg">                    
+                </div>
+                
+            </div>
+            <div class="contacto-grande">
+            </br>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                </svg>  +34 971281918
+            </br>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone-fill" viewBox="0 0 16 16">
+                  <path d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0z"/>
+                </svg>  +34 638287278
+            </br>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                </svg>  adrianmarzo@estudiante.edib.es
+               <!-- <i class="bi bi-telephone"></i> -->
+            </div>
+            
+        </div>
+
+        <div class="col-lg-7">
+            <div class="descripcion-grande">
+                <p class="titulo-grande">Alquiler de Garaje en calle de Pedro i Pons, 9</p>
+                <p class="zona-grande">Pedralbes, Barcelona</p>
+                <p class="precio-grande">162 €/mes</p>
+                <p style="font-weight: bold;">Descripción: </p>
+
+                <p class="descripcion-grande-entera">El mejor parking de Sevilla para tu autocaravana, camper, caravana,...Instalaciones amplias con servicio de carga y descargas de aguas, taller, repuestos, bombonas, lavadero, seguridad 24h, seguro, cámaras, baños, etc...Pide una cita al 627 09 72 91 para ver las instalaciones, precio désde 30€.</p>
+                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1537.370446988436!2d2.6272005!3d39.5879896!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12979285c26abb63%3A0xcdfa8aa4aae8abce!2sPalacio%20Municipal%20de%20deportes%20Son%20Moix%20IME!5e0!3m2!1ses!2ses!4v1645792181733!5m2!1ses!2ses" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+        </div>  
+        </div>
+       
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Bootstrap JS -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>

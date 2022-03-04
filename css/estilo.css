@@ -1,0 +1,109 @@
+.cabecera{
+	background-image: url(../img/prueba.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+.container{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.carta{
+	width: 100%;
+	height: 300px;
+	position: relative;
+	background-color: #F7E7E4;
+	margin-bottom: 5%;
+	transition: 0.2s ease;
+}
+
+.carta:hover{
+	transform: scale(0.85);
+}
+
+.marco{
+	position: absolute;
+	width: 96%;
+	top: 2%;
+	left: 2%;
+	right: 2%;
+	bottom: 35%;
+	background-color: blue;
+}
+
+.imagen{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.imagen > img{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.titulo{
+	position: absolute;
+	left: 5%;
+	bottom: 15%;
+}
+
+.titulo > h1 {
+	color: black;
+}
+
+.precio{
+	position: absolute;
+	left: 5%;
+	bottom: 2%;
+	
+}
+
+.precio > p{
+	color: black;
+}
+
+.marco-grande{
+	width: 100%;
+	height: 80%;
+}
+.imagen-grande{
+	width: 100%;
+	height: 100%;
+}
+
+.imagen-grande > img{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.titulo-grande{
+	font-size: x-large;
+	font-family: cursive;
+	font-weight: bold;
+	vertical-align: bottom;
+}
+
+.zona-grande{
+	color: grey;
+	font-size: small;
+	font-family: sans-serif;
+	vertical-align: top;
+}
+
+.precio-grande{
+	font-size: medium;
+	font-weight: bold;
+}
+
+.descripcion-grande-entera{
+	text-align: justify;
+}
